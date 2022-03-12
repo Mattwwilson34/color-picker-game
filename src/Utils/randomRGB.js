@@ -5,7 +5,7 @@ const randomRGB = () => {
   const g = randomNumber(0, 255);
   const b = randomNumber(0, 255);
 
-  return `rgb(${r},${g},${b})`;
+  return `rgb(${r}, ${g}, ${b})`;
 };
 
 export default randomRGB;

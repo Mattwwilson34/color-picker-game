@@ -2,9 +2,12 @@ import './ColorBlock.css';
 import React from 'react';
 
 const ColorBlock = (props) => {
-  const { color } = props;
+  const { color, onClick } = props;
   return (
-    <div style={{ backgroundColor: `${color}` }} className='ColorBlock'></div>
+    <div
+      style={{ backgroundColor: `${color}` }}
+      className='ColorBlock'
+      onClick={onClick}></div>
   );
 };
 
