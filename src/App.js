@@ -9,6 +9,7 @@ import shuffleArray from './Utils/shuffleArray';
 function App() {
   const [winColor, setWinColor] = useState(randomRGB());
   const [colorArray, setColorArray] = useState([]);
+  const [gameOver, setGameOver] = useState(false);
 
   useEffect(() => {
     generateColorArray(6);
@@ -27,13 +28,18 @@ function App() {
   const checkWin = (e) => {
     const colorBlock = e.target;
     const RGB = e.target.style.backgroundColor;
-    console.log(RGB, winColor);
-    if (RGB === winColor) return console.log('Correct!');
+    if (RGB === winColor) {
+      colorBlock.textContent = 'CORRECT';
+      document.querySelector('body').style.backgroundColor = RGB;
+      return;
+    }
     colorBlock.style.opacity = '0';
+    colorBlock.textContent = 'INCORRECT';
   };
 
   const reset = () => {
     setWinColor(randomRGB());
+    document.querySelector('body').style.backgroundColor = '#2c2d2d';
   };
 
   return (
