@@ -1,11 +1,10 @@
 button {
   border-style: none;
-  font-size: 3rem;
+  font-size: 1.5rem;
   border-radius: 10px;
-  padding: 2rem;
+  padding: 1rem;
   background-color: red;
   opacity: 0.8;
-  margin: 4rem;
 }
 
 button:hover {
