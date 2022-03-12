@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/color-picker-game/static/css/main.31622bab.css",
+    "main.js": "/color-picker-game/static/js/main.4c94f217.js",
+    "index.html": "/color-picker-game/index.html",
+    "main.31622bab.css.map": "/color-picker-game/static/css/main.31622bab.css.map",
+    "main.4c94f217.js.map": "/color-picker-game/static/js/main.4c94f217.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31622bab.css",
+    "static/js/main.4c94f217.js"
+  ]
+}
