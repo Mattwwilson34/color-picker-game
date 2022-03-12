@@ -31,7 +31,12 @@ function App() {
       <div className='ColorBlockContainer'>
         {colorArray.map((color) => {
           return (
-            <ColorBlock key={color} color={color} onClick={handleBlockClick} />
+            <ColorBlock
+              key={color}
+              color={color}
+              onClick={handleBlockClick}
+              testID={'color-block'}
+            />
           );
         })}
       </div>
