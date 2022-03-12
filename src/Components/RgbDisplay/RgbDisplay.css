@@ -1,4 +1,6 @@
 .RGBHeader {
   font-size: 5rem;
   margin: 2rem;
+  text-transform: uppercase;
+  color: #44a73e;
 }
