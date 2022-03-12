@@ -1,8 +1,8 @@
-import './ColorBlock.css'
+import './ColorBlock.css';
 import React from 'react';
 
 const ColorBlock = () => {
-  return <div>ColorBlock COMPONENT</div>;
-  }; 
+  return <div className='ColorBlock'></div>;
+};
 
-  export default ColorBlock;
+export default ColorBlock;
