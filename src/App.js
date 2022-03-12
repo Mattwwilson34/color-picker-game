@@ -38,7 +38,7 @@ function App() {
 
   return (
     <div className='App'>
-      <h1>Color Picker Game</h1>
+      <h1>RGB GUESSING GAME</h1>
       <RgbDisplay RGB={winColor} />
       <div className='ColorBlockContainer'>
         {colorArray.map((color) => {
