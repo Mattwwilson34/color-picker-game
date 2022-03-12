@@ -11,7 +11,7 @@ function App() {
 
   useEffect(() => {
     generateColorArray(6);
-  }, []);
+  }, [winColor]);
 
   const generateColorArray = (numOfBlocks) => {
     const colors = [];
@@ -19,6 +19,10 @@ function App() {
       colors.push(randomRGB());
     }
     setColorArray(colors);
+  };
+
+  const reset = () => {
+    setWinColor(randomRGB());
   };
 
   return (
@@ -30,7 +34,7 @@ function App() {
           return <ColorBlock key={color} color={color} />;
         })}
       </div>
-      <Button label='RESET' onClick={() => console.log('Clicked')} />
+      <Button label='RESET' onClick={() => reset()} />
     </div>
   );
 }
